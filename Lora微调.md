@@ -1,13 +1,5 @@
 
 
-## 概述
-
-本节我们简要介绍如何基于 transformers、peft 等框架，对 ChatGLM3-6B-chat 模型进行 Lora 微调。Lora 是一种高效微调方法，深入了解其原理可参见博客：[知乎|深入浅出Lora](https://zhuanlan.zhihu.com/p/650197598)。
-
-本节所讲述的代码脚本在同级目录 [ChatGLM3-6B-chat Lora 微调](./06-ChatGLM3-6B-Lora微调.py) 下，运行该脚本来执行微调过程，但注意，本文代码未使用分布式框架，微调 ChatGLM3-6B-Chat 模型至少需要 21G 及以上的显存，且需要修改脚本文件中的模型路径和数据集路径。
-
-这个教程会在同目录下给大家提供一个 [nodebook](./06-ChatGLM3-6B-Lora微调.ipynb) 文件，来让大家更好的学习。  
-鸣谢大佬的详细讲解与教程: [transformers-code](https://github.com/zyds/transformers-code)
 
 ## 环境配置
 
