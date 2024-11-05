@@ -130,14 +130,14 @@ config = LoraConfig(
 
 ## 自定义 TrainingArguments 参数
 
-`TrainingArguments`这个类的源码也介绍了每个参数的具体作用，当然大家可以来自行探索，这里就简单说几个常用的。
+
 
 - `output_dir`：模型的输出路径
 - `per_device_train_batch_size`：顾名思义 `batch_size`
-- `gradient_accumulation_steps`: 梯度累加，如果你的显存比较小，那可以把 `batch_size` 设置小一点，梯度累加增大一些。
+- `gradient_accumulation_steps`: 梯度累加，如果显存比较小，那可以把 `batch_size` 设置小一点，梯度累加增大一些。
 - `logging_steps`：多少步，输出一次`log`
 - `num_train_epochs`：顾名思义 `epoch`
-- `gradient_checkpointing`：梯度检查，这个一旦开启，模型就必须执行`model.enable_input_require_grads()`，这个原理大家可以自行探索，这里就不细说了。
+- `gradient_checkpointing`：梯度检查，这个一旦开启，模型就必须执行`model.enable_input_require_grads()`
 
 ```python
 # Data collator GLM源仓库从新封装了自己的data_collator,在这里进行沿用。
