@@ -1,4 +1,4 @@
-# 06-ChatGLM3-6B-chat Lora 微调
+
 
 ## 概述
 
